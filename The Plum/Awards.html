@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awards | The Plum Accomodation</title>
+    <link rel="icon" href="images/TitleTab.png" type="image/x-icon">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .awards-section {
+          padding: 40px 0;
+          background-color: #f8f9fa;
+          text-align: center;
+        }
+        .award-frame {
+          border: 5px solid #ddd;
+          padding: 10px;
+          border-radius: 10px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          background-color: white;
+          margin-bottom: 20px; /* Adds space between each award */
+        }
+        .award-image {
+          width: 100%;
+          height: auto;
+          border-radius: 5px;
+        }
+        /* Custom sliding animation for collapse */
+    .navbar-collapse {
+      transition: transform 0.4s ease;
+    }
+    .navbar-collapse.collapsing {
+      transform: scaleY(0);
+    }
+    .navbar-collapse.show {
+      transform: scaleY(1);
+    }
+  
+      </style>
+</head>
+<body>
+       <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+      <!-- Brand -->
+      <a class="navbar-brand" href="HomePage.html">
+        <img src="images/Title.png" alt="Logo" style="height: 40px; margin-right: 8px;">
+        The Plum Accommodation
+      </a>
+      
+      <!-- Toggler/collapsible Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="HomePage.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="rooms.html">Rooms</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="AboutUs.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  bg-primary text-white rounded" href="Awards.html">Awards</a>
+              </li>
+          </ul>
+      </div>
+  </div>
+</nav>
+
+    <!--Intro-->
+    <section class="jumbotron text-center">
+        <h1>Accomodation Awards</h1>
+        <p class="lead">A collection of all the awards our special accomodation has recieved.<br>To showcase it's exceptional service in the hospitality industry. </p>
+    </section>
+
+        <!-- Awards Section -->
+<section class="awards-section container">
+    <h2 class="mb-4">Our Awards</h2>
+    <div class="row justify-content-center">
+      <!-- Award 1 -->
+      <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+        <div class="award-frame">
+          <img src="images/ThePlumAward.png" alt="Award 1" class="award-image">
+        </div>
+      </div>
+      <!-- Award 2 -->
+      <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+        <div class="award-frame">
+          <img src="images/TheAffecAward.png" alt="Award 2" class="award-image">
+        </div>
+      </div>
+      <!-- Award 3 -->
+      <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+        <div class="award-frame">
+          <img src="images/ComingSoon.png" alt="Award 3" class="award-image">
+        </div>
+      </div>
+      <!-- Award 4 -->
+      <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+        <div class="award-frame">
+          <img src="images/ComingSoon.png" alt="Award 4" class="award-image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="bg-light text-dark pt-4">
+    <div class="container">
+        <div class="row">
+            <!-- Contact Information -->
+            <div class="col-md-4 mb-4">
+                <h5>Contact Information</h5>
+                <ul class="list-unstyled">
+                    <li>41B Stubbs Street, Louis Trichardt</li>
+                    <li>0920, South Africa</li>
+                    <li>+27 63 150 4926</li>
+                    <li><a href="mailto:bessongandbessong@gmail.com">bessongandbessong@gmail.com</a></li>
+                </ul>
+            </div>
+            <!-- Booking Partners -->
+            <div class="col-md-4 mb-4">
+                <h5>Booking Partners</h5>
+                <ul class="list-unstyled">
+                    <li><a href="https://www.booking.com/Share-zirChk">The Plum - Booking.com</a></li>
+                    <li><a href="https://www.airbnb.com/rooms/932008681779428358?guests=1&adults=1&s=67&unique_share_id=f6f3268b-b284-4ef5-a42f-4a295d3476c6">The Plum - Airbnb</a></li>
+                    <li><a href="https://www.airbnb.com/rooms/931990468521433677?guests=1&adults=1&s=67&unique_share_id=91cbd75e-f7d8-4f43-8c42-d1bd607ab2b9">The Affectionate One - Airbnb</a></li>
+                    <li><a href="https://www.booking.com/Share-pc2DRIm">The Affectionate One - Booking.com</a></li>
+                </ul>
+            </div>
+            <!-- Newsletter Signup -->
+            <div class="col-md-4 mb-4">
+                <h5>Stay Updated</h5>
+                <form>
+                    <div class="form-group mb-2">
+                        <input type="email" class="form-control" placeholder="Your email address">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <!-- Footer Bottom -->
+        <div class="text-center py-3">
+            <p class="mb-0">&copy; 2024 The Plum Accommodation. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
