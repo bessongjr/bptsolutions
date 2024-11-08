@@ -1,0 +1,136 @@
+/* styles.css */
+
+/* Customizing colors */
+body {
+    color: #000;
+}
+
+.hero {
+    background-color: #417514;
+    color: white;
+}
+
+.btn-primary {
+    background-color: #417514;
+    border-color: #417514;
+}
+
+.nav-link, .navbar-brand {
+    color: #000 !important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #417514 !important;
+}
+
+.footer {
+    background-color: #f8f9fa;
+    color: #000;
+}
+
+/* Centering the Contact Section */
+#contact {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* Style form labels and inputs */
+.form-group label {
+    font-weight: bold;
+    color: #417514;
+}
+
+.btn-success {
+    background-color: #417514;
+    border-color: #417514;
+}
+
+.btn-success:hover {
+    background-color: #356212;
+    border-color: #356212;
+
+}
+
+#hero {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+#hero div {
+    max-width: 600px;
+    text-align: left;
+}
+
+#hero p {
+    font-size: 14px;
+    margin: 0;
+}
+
+#hero h1 {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+#hero button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #417514;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#about {
+    padding: 50px;
+}
+
+#about h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#about div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#about .text-column {
+    flex: 1;
+    padding-right: 20px;
+    text-align: left;
+}
+
+#about .separator {
+    border-left: 1px solid #417514; /* Vertical line color */
+    height: 300px; /* Adjust height as needed */
+    margin: 0 20px; /* Space around the line */
+}
+
+#about .image-column {
+    flex: 1;
+    padding-left: 20px;
+}
+
+#about img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+#about p, #about h1 {
+    font-size: 20px; /* You can adjust sizes */
+}
+
+.modal.fade .modal-dialog {
+    transform: translateY(-100px);
+    transition: transform 0.3s ease-out;
+}
+
+.modal.show .modal-dialog {
+    transform: translateY(0);
+}
