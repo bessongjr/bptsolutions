@@ -1,0 +1,268 @@
+/* =====================================================
+   GLOBAL STYLES
+   - Sets the dark theme foundation
+===================================================== */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0f172a;          /* Dark navy background */
+    color: #e5e7eb;                     /* Soft white text */
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: #f8fafc;                     /* Brighter white for headings */
+    font-weight: 700;
+}
+
+/* Paragraph text */
+p {
+    color: #cbd5e1;                     /* Muted text for readability */
+    font-size: 15px;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* =====================================================
+   NAVBAR
+   - Fixed dark navbar with green highlights
+===================================================== */
+
+.navbar {
+    background-color: #020617 !important;
+    padding: 15px 20px;
+}
+
+.navbar-brand {
+    color: #f8fafc !important;
+    font-weight: 700;
+}
+
+.nav-link {
+    color: #e5e7eb !important;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.nav-link:hover {
+    color: #22c55e !important;          /* Brand green hover */
+}
+
+/* =====================================================
+   BUTTONS
+   - Primary CTA styling
+===================================================== */
+
+.btn-success {
+    background-color: #22c55e;
+    border-color: #22c55e;
+    font-weight: 600;
+}
+
+.btn-success:hover {
+    background-color: #16a34a;
+    border-color: #16a34a;
+}
+
+/* Outline button (secondary CTA) */
+.btn-outline-success {
+    color: #22c55e;
+    border-color: #22c55e;
+}
+
+.btn-outline-success:hover {
+    background-color: #22c55e;
+    color: #020617;
+}
+
+/* =====================================================
+   HERO SECTION
+   - Main value proposition area
+===================================================== */
+
+#hero {
+    background: radial-gradient(
+        circle at top,
+        #020617 0%,
+        #0f172a 100%
+    );
+    padding: 120px 20px;                /* Space for fixed navbar */
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 42px;
+}
+
+#hero p {
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+/* =====================================================
+   SECTION SPACING
+   - Consistent vertical rhythm
+===================================================== */
+
+section {
+    padding: 80px 0;
+}
+
+/* Override Bootstrap light background for dark theme */
+.bg-light {
+    background-color: #020617 !important;
+}
+
+/* =====================================================
+   SERVICES & CONTENT SECTIONS
+===================================================== */
+
+#services i {
+    color: #22c55e;                     /* Icon highlight */
+}
+
+/* Lists */
+ul {
+    padding-left: 0;
+}
+
+ul li {
+    list-style: none;
+    color: #cbd5e1;
+    font-size: 15px;
+}
+
+/* =====================================================
+   CARDS (Projects / Work)
+   - Used for portfolio & service items
+===================================================== */
+
+.card {
+    background-color: #020617;
+    border: 1px solid #1e293b;
+    border-radius: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.card-title {
+    color: #f8fafc;
+}
+
+.card-text {
+    color: #cbd5e1;
+}
+
+/* Card images */
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* =====================================================
+   PROCESS SECTION
+   - Step-by-step flow explanation
+===================================================== */
+
+#process h5 {
+    color: #22c55e;
+    font-weight: 600;
+}
+
+/* =====================================================
+   FORMS (Contact / Lead Capture)
+===================================================== */
+
+.form-group label {
+    color: #94a3b8;
+    font-weight: 600;
+}
+
+/* Input fields */
+.form-control {
+    background-color: #020617;
+    color: #e5e7eb;
+    border: 1px solid #334155;
+    border-radius: 6px;
+}
+
+.form-control::placeholder {
+    color: #64748b;
+}
+
+.form-control:focus {
+    background-color: #020617;
+    color: #e5e7eb;
+    border-color: #22c55e;
+    box-shadow: none;
+}
+
+/* =====================================================
+   ALERTS (Form Feedback)
+===================================================== */
+
+.alert-success {
+    background-color: #052e16;
+    color: #bbf7d0;
+    border: none;
+}
+
+.alert-danger {
+    background-color: #450a0a;
+    color: #fecaca;
+    border: none;
+}
+
+/* =====================================================
+   FOOTER
+   - Clean, minimal closing section
+===================================================== */
+
+footer {
+    background-color: #020617;
+    color: #94a3b8;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* =====================================================
+   RESPONSIVE TWEAKS
+   - Mobile-friendly adjustments
+===================================================== */
+
+@media (max-width: 768px) {
+
+    #hero h1 {
+        font-size: 32px;
+    }
+
+    #hero p {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+}
