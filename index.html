@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ================= META ================= -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ================= PAGE TITLE ================= -->
+    <title>BPT Solutions | Web Development Agency</title>
+
+    <!-- ================= FAVICON ================= -->
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+
+    <!-- ================= STYLESHEETS ================= -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- ================= EMAILJS ================= -->
+    <!-- Used for contact form submissions -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("Euyrt37eiqpJGMZh1"); // Your EmailJS public key
+        })();
+    </script>
+</head>
+
+<body>
+
+<!-- ======================================================
+     NAVBAR
+     - Main site navigation
+     - Fixed for easy access
+====================================================== -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+    <a class="navbar-brand" href="#hero">
+        <img src="images/logo.png" alt="BPT Solutions Logo" style="height:40px; margin-right:8px;">
+        <strong>BPT Solutions</strong>
+    </a>
+
+    <!-- Mobile menu button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navigation links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto align-items-center">
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="clients.html">Clients</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+            <li class="nav-item ml-2">
+                <a class="btn btn-primary text-white" href="#contact">Get a Free Quote</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- ======================================================
+     HERO SECTION
+     - Main value proposition
+     - First thing users see
+====================================================== -->
+<section id="hero" class="d-flex align-items-center" style="min-height:100vh;">
+    <div class="container text-center">
+        <h1 class="display-4 font-weight-bold">
+            Design. Performance. Results.
+        </h1>
+        <p class="lead mt-3">
+            We design fast, static SEO-optimized websites that turn visitors into loyal customers.
+        </p>
+
+        <!-- Primary CTAs -->
+        <div class="mt-4">
+            <a href="#contact" class="btn btn-primary btn-lg mr-2">Get a Free Quote</a>
+            <a href="about.html" class="btn btn-outline-primary btn-lg">About Us</a>
+        </div>
+    </div>
+</section>
+
+<!-- ======================================================
+     SERVICES SECTION
+     - What the agency offers
+====================================================== -->
+<section id="services" class="bg-light" style="padding-top: 5rem;">
+    <div class="container">
+        <h2 class="text-center mb-5;">Our Services</h2>
+
+        <div class="row text-center" style="padding-top: 2rem; padding-bottom: 1rem;">
+            <!-- Service 1 -->
+            <div class="col-md-4 mb-4">
+                <i class="fa fa-laptop fa-3x text-info mb-3"></i>
+                <h5>Website Development</h5>
+                <p>Modern, mobile-first websites designed to convert visitors.</p>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="col-md-4 mb-4">
+                <i class="fa fa-search fa-3x text-info mb-3"></i>
+                <h5>SEO Optimization</h5>
+                <p>Search-engine-friendly structure to help you rank on Google.</p>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="col-md-4 mb-4">
+                <i class="fa fa-wrench fa-3x text-info mb-3"></i>
+                <h5>Website Maintainance</h5>
+                <p>High-performance landing pages for campaigns and startups.</p>
+            </div>
+        </div>
+        <p style="text-align: center;"> <em> + much more</em></p>
+        <hr>
+    </div>
+</section>
+
+
+<!-- ======================================================
+     PROCESS
+     - Explains how clients work with you
+====================================================== -->
+<section id="process" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">How We Work</h2>
+
+        <div class="row text-center">
+            <div class="col-md-3">
+                <h5>1. Discovery</h5>
+                <p>Understanding your goals.</p>
+            </div>
+            <div class="col-md-3">
+                <h5>2. Design</h5>
+                <p>Conversion-focused layout.</p>
+            </div>
+            <div class="col-md-3">
+                <h5>3. Development</h5>
+                <p>Fast, SEO-ready build.</p>
+            </div>
+            <div class="col-md-3">
+                <h5>4. Launch</h5>
+                <p>Your site goes live.</p>
+            </div>
+            
+        </div>
+    </div>
+</section>
+<hr>
+<!-- ======================================================
+     CONTACT / LEAD FORM
+====================================================== -->
+<section id="contact" class="py-5">
+    <div class="container">
+        <h2 class="text-center">Contact Us</h2>
+        <p class="text-center mb-4">We typically respond within 72 hours.</p>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" name="name" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" name="email" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea name="message" class="form-control" rows="4" required></textarea>
+                    </div>
+
+                    <!-- Form feedback -->
+                    <div id="form-messages" class="text-center mb-2"></div>
+
+                    <button type="submit" class="btn btn-info btn-block">
+                        Send Request
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ======================================================
+     FOOTER
+====================================================== -->
+<footer class="bg-secondary text-white text-center py-4">
+    <p class="mb-0">&copy; 2026 BPT Solutions. All Rights Reserved.</p>
+</footer>
+
+<!-- ======================================================
+     SCRIPTS
+====================================================== -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Contact form submission -->
+<script>
+document.getElementById('contact-form').addEventListener('submit', function(e){
+    e.preventDefault();
+    const messages = document.getElementById('form-messages');
+
+    emailjs.sendForm('service_mxwrcji', 'template_y1ed2gk', this)
+        .then(() => {
+            messages.innerHTML = '<div class="alert alert-success">Message sent successfully!</div>';
+            this.reset();
+            setTimeout(() => messages.innerHTML = '', 5000);
+        }, () => {
+            messages.innerHTML = '<div class="alert alert-danger">Failed to send message.</div>';
+        });
+});
+</script>
+<!--Smooth Scroll-->
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href'))
+            .scrollIntoView({ behavior: 'smooth' });
+    });
+});
+</script>
+
+
+</body>
+</html>
